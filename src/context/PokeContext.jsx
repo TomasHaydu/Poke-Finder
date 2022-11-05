@@ -45,7 +45,6 @@ const PokeProvider = ({ children }) => {
   return (
     <PokeContext.Provider
       value={{
-        setSearch,
         pokemons,
         setPokemons,
         setValue,
