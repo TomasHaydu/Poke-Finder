@@ -1,4 +1,10 @@
+import usePokemon from "../hooks/UsePokemon"
+
 const Modal = ({ pokeInfo }) => {
+
+    
+    const {colorTypes}  = usePokemon()
+
     return (
         <div
             className='modal'
@@ -22,7 +28,7 @@ const Modal = ({ pokeInfo }) => {
                 >ALTURA: </label>
                 <p
                  className='modal__container--info'
-                >{pokeInfo.height}mts</p>
+                >{pokeInfo.height/10} {""} mts</p>
             </div>
             <div
                 className='modal__container'
@@ -32,7 +38,7 @@ const Modal = ({ pokeInfo }) => {
                 >PESO: </label>
                 <p
                  className='modal__container--info'
-                >{pokeInfo.weight}kg</p>
+                >{pokeInfo.weight/10} {""} kg</p>
             </div>
             <div
                 className='modal__container'
@@ -43,6 +49,7 @@ const Modal = ({ pokeInfo }) => {
                 {(pokeInfo.abilities).map(poke => 
                 <p
                  className='modal__container--info'
+                 key={poke.ability.name}
                  >{poke.ability.name}</p>)}
             </div>
             <div
@@ -54,6 +61,8 @@ const Modal = ({ pokeInfo }) => {
                 {(pokeInfo.types).map(poke =>
                 <p
                  className='modal__container--info'
+                 key={poke.type.name}
+                 style={{backgroundColor : `${colorTypes[poke.type.name]}`  }}
                 >{poke.type.name}</p>)}
             </div>
             <div
@@ -65,6 +74,7 @@ const Modal = ({ pokeInfo }) => {
                 {(pokeInfo.forms).map(poke =>
                 <p
                  className='modal__container--info'
+                 key={poke.name}
                 >{poke.name}</p>)}
             </div>
 
