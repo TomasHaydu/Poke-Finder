@@ -7,6 +7,11 @@ Un buscador simple de pokemones, para poder disfrutar de muchas de sus caracter�
 2. Busca los pokemones por su nombre.
 3. Agrega y quita pokemones de tu lista de favoritos y observalos en una plantilla particular.
 
+## Librerías
+
+Las librerías extra que usé son:
+	-React : https://es.reactjs.org
+
 ## API
 
 Las API que usé es:
