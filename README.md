@@ -1,4 +1,4 @@
-# Lista de Tareas
+# Pokemon-Finder
 
 Un buscador simple de pokemones, para poder disfrutar de muchas de sus características y valores.
 
