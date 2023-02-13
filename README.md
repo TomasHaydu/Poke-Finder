@@ -10,7 +10,7 @@ Un buscador simple de pokemones, para poder disfrutar de muchas de sus caracter�
 ## Librerías
 
 Las librerías extra que usé son:
-	-React : https://es.reactjs.org
+	-React : https://es.reactjs.org (Context)
 
 ## API
 
