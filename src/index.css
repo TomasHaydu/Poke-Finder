@@ -710,6 +710,10 @@ body {
   body {
     font-size: 14px;
   }
+  
+  .header__title {
+  display: none
+}
 
   .container {
     grid-template-columns: 80%;
