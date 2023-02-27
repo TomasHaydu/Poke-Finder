@@ -1,27 +1,27 @@
 # Pokemon-Finder
 
-Un buscador simple de pokemones, para poder disfrutar de muchas de sus características y valores.
+A simple pokemon search engine, to enjoy many of its features and powers.
 
-## Funcionalidades
-1. Navega a través de todos los pokemones, mira sus habilidades y detalles al maximo.
-2. Busca los pokemones por su nombre.
-3. Agrega y quita pokemones de tu lista de favoritos y observalos en una plantilla particular.
+## Functionality
+1. Browse through all pokemon, see their abilities and details.
+2. Search for your pokemon by its name.
+3. Add and remove pokemon from your favorites list and watch them separately.
 
-## Librerías
+## Libraries
 
-Las librerías extra que usé son:
-	-React : https://es.reactjs.org (Context)
+The extra libraries I used are:
+	-React : https://es.reactjs.org (Context).
 
 ## API
 
-Las API que usé es:
+The API I used is:
 	-Poke API : https://pokeapi.co
 
-## Instalación
+## Installation
 	git clone https://github.com/TomasHaydu/Pokemons-Finder
 	npm i
 	npm run dev
 
-## Preview del proyecto
+## Project preview
 
 <img width="943" alt="pokemon finder foto" src="https://user-images.githubusercontent.com/103974880/218335342-0f9ea517-a6a3-4f74-bf41-e6448eab677d.png">
