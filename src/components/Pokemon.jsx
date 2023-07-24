@@ -108,7 +108,7 @@ const Pokemons = ({ pokemon }) => {
           <div className="container__pokemons-but">
             <button
               className="container__pokemons__button"
-              onClick={handleModal}
+              onClick={() => handleModal()}
             >
               {modal ? "Ver Imagen" : "Mas info"}
             </button>

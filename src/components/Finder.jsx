@@ -42,7 +42,7 @@ const Finder = () => {
             list="tareas"
           />
           <datalist id="tareas">
-            {pokemons.map(pokemon => <option value={pokemon.name}></option>)}
+            {pokemons.map(pokemon => <option value={pokemon.name} key={pokemon.name}></option>)}
           </datalist>
           <button className="block__search-clear" onClick={() => handleClear()}>
             X

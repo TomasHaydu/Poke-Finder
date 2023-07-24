@@ -11,7 +11,7 @@ body {
   padding: 0;
   margin-top: 0;
   font-size: 16px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'VT323', monospace;
   scroll-behavior: smooth;
   background-color: var(--yellow);
 }
@@ -19,40 +19,78 @@ body {
 .responsive {
   width: 100%;
   overflow: hidden;
+  background-image: url("../src/img/pokemon-back.png");
+  background-position: center center;
+  background-size: contain;
 }
 
 .header {
-  background-image: url("https://wallpaperaccess.com/full/20997.jpg");
-  background-repeat: no-repeat;
-  background-position: initial;
-  background-size: cover;
-  padding: 1.7vh;
-  margin-top: 0%;
-  width: 100vw;
-  height: 18em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  border: 1px solid black;
-  border-radius: 0px 0px 1.7vh 1.7vh;
+  height: 9rem;
+}
+
+.header__ball {
+  width: 15em;
   cursor: pointer;
 }
 
+.header__ball:hover {
+  animation: rotateAnimation 3s cubic-bezier(0.19, 1, 0.22, 1);
+  animation-fill-mode: forwards;
+}
+
+@keyframes rotateAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .header__title {
-  font-size: 3.5em;
-  font-weight: bold;
-  color: #fff;
-  font-family: "Rock Salt", cursive;
-  width: 50%;
-  margin-left: 10em;
+width: 40%;
+ position: fixed;
+ top: 0;
+ right: 26%;
+ margin: auto;
+ z-index: 999;
+}
+
+.visible {
+  top: 0; 
+  animation-duration: 1s;
+  animation-name: showHeader;
+}
+
+.hidden {
+  top: -80em;
+  animation-duration: 1s;
+  animation-name: hideHeader;
+}
+
+@keyframes showHeader {
+  from {
+    top: -80em; 
+  }
+  to {
+    top: 0; 
+  }
+}
+
+@keyframes hideHeader {
+  from {
+    top: 0; 
+  }
+  to {
+    top: -80em; 
+  }
 }
 
 .block {
   margin: auto;
   margin-top: 1em;
-  font-size: 2em;
-  padding: 0.5em;
+  font-size: 1.3em;
+  padding: 0.4em;
   border: 3px solid var(--red);
   border-radius: 3.4vh;
   background-color: var(--red);
@@ -142,6 +180,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url("../src/img/poke-back.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 5%;
 }
 
 .container__pokemons_container-2 {
@@ -158,8 +201,11 @@ body {
 
 .container__pokemons {
   background-color: var(--lightblue);
-  border: 1px solid rgb(255, 255, 255);
+  border: 2px solid rgb(177, 211, 255);
   border-radius: 5px;
+  box-shadow: -4px 4px 4px 2px rgba(176,213,255,0.99);
+-webkit-box-shadow: -4px 4px 4px 2px rgba(176,213,255,0.99);
+-moz-box-shadow: -4px 4px 4px 2px rgba(176,213,255,0.99);
   margin: 1em auto;
   color: #fff;
   display: flex;
@@ -187,7 +233,6 @@ body {
 }
 
 .container__pokemons__name {
-  margin: auto;
   border: 2px solid white;
   border-radius: 10%;
   padding: 0.2em 0.8em;
@@ -207,7 +252,6 @@ body {
   width: 12%;
   display: flex;
   margin-right: 80%;
-  border: 2px solid var(--lightblue);
   cursor: pointer;
 }
 
@@ -239,7 +283,7 @@ body {
 
 .container__pokemons__button {
   width: 9em;
-  height: 2em;
+  height: 1.5em;
   margin-right: 0.5em;
   background-color: rgb(65, 114, 98);
   border: 2px solid black;
@@ -248,6 +292,7 @@ body {
   font-weight: bold;
   color: #fff;
   cursor: pointer;
+  margin-top: 0.2em;
 }
 
 .container__pokemons__button:hover {
@@ -256,8 +301,8 @@ body {
 
 .container__pokemons__button-info {
   margin: auto;
-  width: 2.5em;
-  height: 2.5em;
+  width: 2em;
+  height: 2em;
   background-color: rgb(188, 222, 236);
   border: 3px solid white;
   border-radius: 100%;
@@ -265,6 +310,7 @@ body {
   font-size: 0.8em;
   cursor: pointer;
   animation: animationFavFixed 10s ease 0s 9999999999 normal forwards;
+  margin-bottom: 0.5em;
 }
 
 .container__pokemons__button-info:hover {
@@ -334,7 +380,6 @@ body {
   height: 100%;
   background-color: rgb(57, 57, 57);
   border-radius: 2vh;
-  margin-bottom: 1em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -373,7 +418,7 @@ body {
   display: flex;
   justify-content: start;
   font-size: 0.6em;
-  margin-left: 0.2em;
+  margin: 0.3em;
 }
 
 .modal__container-2 {
@@ -710,10 +755,6 @@ body {
   body {
     font-size: 14px;
   }
-  
-  .header__title {
-  display: none
-}
 
   .container {
     grid-template-columns: 80%;
