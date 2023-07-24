@@ -26,4 +26,5 @@ The API I used is:
 
 ## Project preview
 
-<img width="943" alt="pokemon finder foto" src="https://user-images.githubusercontent.com/103974880/218335342-0f9ea517-a6a3-4f74-bf41-e6448eab677d.png">
+![poke-photo](https://github.com/TomasHaydu/Poke-Finder/assets/103974880/194eba4e-b616-4d59-98e0-faa949ad688e)
+
